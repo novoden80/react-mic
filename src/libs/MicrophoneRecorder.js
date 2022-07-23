@@ -68,6 +68,7 @@ export class MicrophoneRecorder {
           mediaRecorder.mimeType = mediaOptions.mimeType
           mediaRecorder.bufferSize = mediaOptions.bufferSize
           mediaRecorder.sampleRate = mediaOptions.sampleRate
+          mediaRecorder.audioChannels = mediaOptions.audioChannels
           if (onStartCallback) {
             onStartCallback()
           }
